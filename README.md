@@ -25,24 +25,24 @@ Type ```termux-setup-storage```.
 Reopen termux app.
 
 #### Step 6
-Type ```apt update && apt upgrade```.
+Type ```yes | apt update -y && yes | apt upgrade -y```.
 
 #### Step 7
 Type
 
 ##### Chromium
 ```
-pkg install tur-repo
-pkg update
-pkg install chromium
+yes | pkg install tur-repo -y
+yes | pkg update -y
+yes | pkg install chromium -y
 ```
 
 ##### Firefox
 ```
-pkg install x11-repo
-pkg update
-pkg install firefox
-apt install geckodriver
+yes | pkg install x11-repo -y
+yes | pkg update -y
+yes | pkg install firefox -y
+yes | apt install geckodriver -y
 ```
 
 #### Step 8
