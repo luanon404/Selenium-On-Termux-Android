@@ -14,13 +14,13 @@ Step
 - Open termux app.
 - Type ```termux-setup-storage```.
 - Reopen termux app.
-- Type ```yes | apt update -y && yes | apt upgrade -y```.
+- Type ```yes | pkg update -y && yes | pkg upgrade -y```.
 
 #### Requirement Library
 ```
 yes | pkg install x11-repo -y
 yes | pkg install tur-repo -y
-yes | apt install xorg-server-xvfb -y
+yes | pkg install xorg-server-xvfb -y
 ```
 
 #### Chromium
@@ -31,7 +31,7 @@ yes | pkg install chromium -y
 #### Firefox
 ```
 yes | pkg install firefox -y
-yes | apt install geckodriver -y
+yes | pkg install geckodriver -y
 ```
 
 How to use
