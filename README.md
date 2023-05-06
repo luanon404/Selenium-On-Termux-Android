@@ -2,58 +2,44 @@
 Tutorial about how to install and use selenium on termux android.
 
 Download
-------
+--------
 
 Termux: [F-droid](https://f-droid.org/repo/com.termux_118.apk)
 
 Step
 -----
 
-#### Step 1
-Uninstall current termux app.
+- Uninstall current termux app.
+- Install new termux app downloaded from F-droid.
+- Open termux app.
+- Type ```termux-setup-storage```.
+- Reopen termux app.
+- Type ```yes | apt update -y && yes | apt upgrade -y```.
 
-#### Step 2
-Install new termux app downloaded from F-droid.
-
-#### Step 3
-Open termux app.
-
-#### Step 4
-Type ```termux-setup-storage```.
-
-#### Step 5
-Reopen termux app.
-
-#### Step 6
-Type ```yes | apt update -y && yes | apt upgrade -y```.
-
-#### Step 7
-Type
-
-##### Requirement Library #####
+#### Requirement Library
 ```
 yes | pkg install x11-repo -y
 yes | pkg install tur-repo -y
 ```
 
-###### Chromium
+#### Chromium
 ```
 yes | pkg install chromium -y
 ```
 
-###### Firefox
+#### Firefox
 ```
 yes | pkg install firefox -y
 yes | apt install geckodriver -y
 ```
 
-#### Step 8
-Type ```pip install pyvirtualdisplay```.
+How to use
+---------
 
-#### Step 9
-Type ```pip install selenium```.
+- Type ```pip install pyvirtualdisplay```.
+- Type ```pip install selenium```.
 
-### Chromium headless ###
+### Chromium headless
 ```
 from selenium import webdriver
 options = webdriver.ChromeOptions()
@@ -64,7 +50,7 @@ driver.save_screenshot("/sdcard/download/screenshot.png")
 driver.quit()
 ```
 
-### Non-headless Chromium ###
+### Non-headless Chromium
 ```
 from selenium import webdriver
 from pyvirtualdisplay import Display
@@ -80,7 +66,7 @@ driver.quit()
 display.stop()
 ```
 
-### Firefox headless ###
+### Firefox headless
 ```
 from selenium import webdriver
 options = webdriver.FirefoxOptions()
@@ -91,7 +77,7 @@ driver.save_screenshot("/sdcard/download/screenshot.png")
 driver.quit()
 ```
 
-### Non-headless Firefox ###
+### Non-headless Firefox
 ```
 from selenium import webdriver
 from pyvirtualdisplay import Display
@@ -110,4 +96,4 @@ display.stop()
 Reference
 ---------
 
-[Termux issues](https://github.com/termux/termux-packages/issues/2149)
+[Termux Issues](https://github.com/termux/termux-packages/issues/2149)
