@@ -10,22 +10,22 @@ Step
 -----
 
 #### Step 1
-Uninstall current termux
+Uninstall current termux app.
 
 #### Step 2
-Install new termux download from F-droid
+Install new termux app downloaded from F-droid.
 
 #### Step 3
-Open termux app
+Open termux app.
 
 #### Step 4
-Type ```termux-setup-storage```
+Type ```termux-setup-storage```.
 
 #### Step 5
-Reopen termux app
+Reopen termux app.
 
 #### Step 6
-Type ```apt update && apt upgrade```
+Type ```apt update && apt upgrade```.
 
 #### Step 7
 Type
@@ -46,10 +46,10 @@ apt install geckodriver
 ```
 
 #### Step 8
-Type ```pip install pyvirtualdisplay```
+Type ```pip install pyvirtualdisplay```.
 
 #### Step 9
-Type ```pip install selenium```
+Type ```pip install selenium```.
 
 ### Chromium headless ###
 ```
