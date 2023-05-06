@@ -30,17 +30,19 @@ Type ```yes | apt update -y && yes | apt upgrade -y```.
 #### Step 7
 Type
 
-##### Chromium
+##### Requirement Library #####
 ```
+yes | pkg install x11-repo -y
 yes | pkg install tur-repo -y
-yes | pkg update -y
+```
+
+###### Chromium
+```
 yes | pkg install chromium -y
 ```
 
-##### Firefox
+###### Firefox
 ```
-yes | pkg install x11-repo -y
-yes | pkg update -y
 yes | pkg install firefox -y
 yes | apt install geckodriver -y
 ```
