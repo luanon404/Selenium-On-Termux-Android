@@ -18,6 +18,7 @@ Step
 
 #### Requirement Library
 ```
+yes | apt install xorg-server-xvfb -y
 yes | pkg install x11-repo -y
 yes | pkg install tur-repo -y
 ```
