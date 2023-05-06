@@ -1,7 +1,7 @@
 # Selenium-On-Termux-Android
 Tutorial about how to install and use selenium on termux android.
 
-Install
+Download
 ------
 
 Termux: [F-droid](https://f-droid.org/repo/com.termux_118.apk)
@@ -10,21 +10,24 @@ Step
 -----
 
 #### Step 1
-Install termux app
+Uninstall current termux
 
 #### Step 2
-Open termux app
+Install new termux download from F-droid
 
 #### Step 3
-Type ```termux-setup-storage```
+Open termux app
 
 #### Step 4
-Reopen termux app
+Type ```termux-setup-storage```
 
 #### Step 5
-Type ```apt update && apt upgrade```
+Reopen termux app
 
 #### Step 6
+Type ```apt update && apt upgrade```
+
+#### Step 7
 Type
 
 ##### Chromium
@@ -42,10 +45,10 @@ pkg install firefox
 apt install geckodriver
 ```
 
-#### Step 7
+#### Step 8
 Type ```pip install pyvirtualdisplay```
 
-#### Step 8
+#### Step 9
 Type ```pip install selenium```
 
 ### Chromium headless ###
