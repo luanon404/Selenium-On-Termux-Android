@@ -4,7 +4,7 @@ Tutorial about how to install and use selenium on termux android.
 Video tutorial
 --------------
 
-[![Video tutorial](https://img.youtube.com/vi/bjhHSG0NuLY/default.jpg)](https://youtu.be/bjhHSG0NuLY)
+[![Video tutorial](https://img.youtube.com/vi/bjhHSG0NuLY/0.jpg)](https://youtu.be/bjhHSG0NuLY)
 
 Download
 --------
