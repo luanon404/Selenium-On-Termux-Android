@@ -25,7 +25,7 @@ Step
 Install
 -------
 
-### Install this if you want to use Non-headless mode
+##### Install this if you want to use Non-headless mode
 - Type ```curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh | bash```.
 - Start vnc server ```vncserver -listen tcp```.
 - Download VNC Viewer from CH Play, use ```localhost:1``` as address.
