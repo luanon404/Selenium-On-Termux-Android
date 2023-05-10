@@ -20,30 +20,25 @@ Step
 - Type ```termux-setup-storage```.
 - Reopen termux app.
 - Type ```yes | pkg update -y && yes | pkg upgrade -y```.
+- Type ```pip install selenium```
 
+Install
+-------
+
+### Install if you want to use Non-headless mode
+- Type ```curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh | bash```.
+
+- Start vnc server ```vncserver -listen tcp```.
+
+<details>
+<summary>Chromium</summary>
+  
 #### Requirement Library
 ```
 yes | pkg install x11-repo -y
 yes | pkg install tur-repo -y
-yes | pkg install xorg-server-xvfb -y
-```
-
-#### Chromium
-```
 yes | pkg install chromium -y
 ```
-
-#### Firefox
-```
-yes | pkg install firefox -y
-yes | pkg install geckodriver -y
-```
-
-How to use
----------
-
-- Type ```pip install pyvirtualdisplay```.
-- Type ```pip install selenium```.
 
 ### Chromium headless
 ```
@@ -59,17 +54,24 @@ driver.quit()
 ### Non-headless Chromium
 ```
 from selenium import webdriver
-from pyvirtualdisplay import Display
-display = Display(visible=0, size=(1920, 1080))
-display.start()
 options = webdriver.ChromeOptions()
-options.add_argument("--no-sandbox")
-options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--display=:1")
 driver = webdriver.Chrome(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
 driver.quit()
-display.stop()
+```
+
+</details>
+
+<details>
+<summary>Firefox</summary>
+
+#### Requirement Library
+```
+yes | pkg install x11-repo -y
+yes | pkg install firefox -y
+yes | pkg install geckodriver -y
 ```
 
 ### Firefox headless
@@ -86,20 +88,18 @@ driver.quit()
 ### Non-headless Firefox
 ```
 from selenium import webdriver
-from pyvirtualdisplay import Display
-display = Display(visible=0, size=(1920, 1080))
-display.start()
 options = webdriver.FirefoxOptions()
-options.add_argument("--no-sandbox")
-options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--display=:1")
 driver = webdriver.Firefox(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
 driver.quit()
-display.stop()
 ```
+
+</details>
 
 Reference
 ---------
 
-[Termux Issues](https://github.com/termux/termux-packages/issues/2149)
+- [Termux Desktop Xfce](https://github.com/Yisus7u7/termux-desktop-xfce)
+- [Termux Issues](https://github.com/termux/termux-packages/issues/2149)
