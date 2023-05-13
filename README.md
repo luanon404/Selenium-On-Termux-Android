@@ -21,7 +21,7 @@ Step
 - Type ```termux-setup-storage```.
 - Reopen termux app.
 - Type ```yes | pkg update -y && yes | pkg upgrade -y```.
-- Type ```pip install selenium```
+- Type ```pip install selenium```.
 
 Install
 -------
