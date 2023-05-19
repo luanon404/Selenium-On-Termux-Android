@@ -1,17 +1,6 @@
 # Selenium-On-Termux-Android
 Tutorial about how to install and use selenium on termux android.
 
-Appnium
--------
-
-- Big thanks to [@mauro199304](https://github.com/mauro199304) for this tutorial.
-
-https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5-a0fd-41cd-b84a-76b3c2d5433f
-
-#### Requirement Library
-- PC/Laptop to active adb (only first time).
-- Enjoy!
-
 Download
 --------
 
@@ -100,6 +89,58 @@ driver = webdriver.Firefox(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
 driver.quit()
+```
+
+</details>
+
+<details>
+<summary>Appnium</summary>
+
+- Big thanks to [@mauro199304](https://github.com/mauro199304), [@remo7777](https://github.com/remo7777/), [@lzhiyong](https://github.com/lzhiyong) for this tutorial.
+- Tested on Android 9, you can also use command like ```adb install app.apk``` without error.
+
+https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5-a0fd-41cd-b84a-76b3c2d5433f
+
+#### Requirement
+- PC/Laptop to active adb (only first time).
+
+#### Requirement Library
+```
+yes | pkg install nodejs -y
+npm install -g appium
+pip install Appium-Python-Client
+yes | pkg install wget -y
+cd $HOME
+wget https://github.com/Lzhiyong/termux-ndk/releases/download/android-sdk/android-sdk-aarch64.zip
+unzip android-sdk-aarch64.zip -d android-sdk
+rm -r android-sdk-aarch64.zip
+echo "export ANDROID_HOME=/data/data/com.termux/files/home/android-sdk" >> ~/.bashrc
+echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools" >> ~/.bashrc
+```
+
+#### Step
+- Enable Developer Mode.
+- Enable USB connect.
+- Connect your phone to PC/Laptop using usb plug.
+- On PC/Laptop, open shell with administrator.
+- Type ```Get-ExecutionPolicy```.
+- If it returns ```Restricted```, then type ```Set-ExecutionPolicy AllSigned``` or ```Set-ExecutionPolicy Bypass -Scope Process```.
+- Type ```Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))```.
+- After install choco, type ```choco install adb```.
+- Open cmd, type ```adb tcpip 5555```
+- From now, you can unplug usb connect to PC/Laptop
+- Open termux, type ```ifconfig```, save your device ip.
+
+![ifconfig](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/58b5f7db-7422-40b8-b984-7ea3be0a6eae)
+
+- Type ```adb kill-server```
+- Type ```adb connect <device ip>```.
+- After that, close termux and open termux again.
+- Type ```appium``` for run adb server.
+- Try this test python script.
+
+```
+
 ```
 
 </details>
