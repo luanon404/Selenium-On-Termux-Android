@@ -4,7 +4,8 @@ Tutorial about how to install and use selenium on termux android.
 Download
 --------
 
-Termux: [F-droid](https://f-droid.org/repo/com.termux_118.apk)
+- Termux -> [F-droid](https://f-droid.org/packages/com.termux/)
+- Termux:API -> [F-Droid](https://f-droid.org/packages/com.termux.api/)
 
 Step
 -----
@@ -20,7 +21,7 @@ Step
 Install
 -------
 
-##### Install this if you want to use Non-headless mode ***(For Chromium, Firefox only)***. With Appium, you don't need to install this.
+##### Install this if you want to use Non-headless mode ***(If you are using Appium, you don't need to install this)***.
 - Type ```curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh | bash```.
 - Start vnc server ```vncserver -listen tcp```.
 - Download VNC Viewer from CH Play, use ```localhost:1``` as address.
