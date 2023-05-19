@@ -129,13 +129,13 @@ echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOM
 - If it returns ```Restricted```, then type ```Set-ExecutionPolicy AllSigned``` or ```Set-ExecutionPolicy Bypass -Scope Process```.
 - Type ```Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))```.
 - After install choco, type ```choco install adb```.
-- Open cmd, type ```adb tcpip 5555```
-- From now, you can unplug usb connect to PC/Laptop
-- Open termux, type ```ifconfig```, save your device ip.
+- Open cmd, type ```adb tcpip 5555```.
+- From now, you can unplug usb connect to PC/Laptop.
+- Open termux, type ```ifconfig```, remember your device ip.
 
 ![ifconfig](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/58b5f7db-7422-40b8-b984-7ea3be0a6eae)
 
-- Type ```adb kill-server```
+- Type ```adb kill-server```.
 - Type ```adb connect <device ip>```.
 - Type ```appium``` for run adb server.
 - Try this test python script.
