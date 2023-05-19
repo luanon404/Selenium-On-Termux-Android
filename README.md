@@ -102,7 +102,7 @@ driver.quit()
 https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5-a0fd-41cd-b84a-76b3c2d5433f
 
 #### Requirement
-- PC/Laptop to active adb (only first time).
+- PC/Laptop to active adb ~~(only first time)~~.
 
 #### Requirement Library
 ```
