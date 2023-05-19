@@ -103,7 +103,7 @@ driver.quit()
 https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5-a0fd-41cd-b84a-76b3c2d5433f
 
 #### Requirement
-- PC/Laptop to active adb ***(if you Turn Off or Restart your device, you must do this again)***.
+- PC/Laptop to active adb ***(If you Turn Off or Restart your device, you must do this again)***.
 
 #### Requirement Library
 ```
@@ -119,7 +119,7 @@ echo "export ANDROID_HOME=$HOME/android-sdk" >> $HOME/.bashrc
 echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools" >> $HOME/.bashrc
 ```
 
-- After that, close termux and open again.
+- After that, close termux and open again ***(Make sure you killed all sessions)***.
 
 #### Step
 - Go to Settings.
@@ -134,19 +134,24 @@ echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOM
 - After install choco, type ```choco install adb```.
 - Open cmd, type ```adb tcpip 5555```.
 - From now, you can unplug usb connect to PC/Laptop.
-- Open termux, type ```ifconfig```, remember your device ip.
+- Open termux, type ```ifconfig```, remember your device ipv4.
 
 ![ifconfig](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/58b5f7db-7422-40b8-b984-7ea3be0a6eae)
 
 - Type ```adb kill-server```.
-- Type ```adb connect <device ip>```.
-- Type ```adb devices```, if you see your device ip, then ```adb kill-server``` again.
+- Type ```adb connect <device ipv4>```.
+- Type ```adb devices```, if you see your device ipv4, then ```adb kill-server``` again.
 - Type ```appium``` for run adb server.
 - Try this test python script.
 
 ```
 
 ```
+
+Error Handling Solution
+-----------------------
+
+- Updating (Too many errors😢).
 
 </details>
 
