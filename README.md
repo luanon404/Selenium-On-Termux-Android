@@ -103,6 +103,7 @@ https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5
 
 #### Requirement
 - PC/Laptop to active adb ~~(only first time)~~.
+- Keep using if you dont want active again, because tcp serer will close after 10 minutes if you dont use.
 
 #### Requirement Library
 ```
