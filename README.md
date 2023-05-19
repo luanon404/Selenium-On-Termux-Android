@@ -104,7 +104,7 @@ https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5
 
 #### Requirement
 - PC/Laptop to active adb ~~(only first time)~~.
-- Keep using if you dont want active again, because tcp serer will close after 10 minutes if you dont use.
+- ~~Keep using if you dont want active again, because tcp serer will close after 10 minutes if you dont use~~.
 
 #### Requirement Library
 ```
@@ -123,6 +123,8 @@ echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOM
 - After that, close termux and open again.
 
 #### Step
+- Open Settings.
+- Find Developer Mode.
 - Enable Developer Mode.
 - Enable USB connect.
 - Connect your phone to PC/Laptop using usb plug.
