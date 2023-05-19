@@ -103,8 +103,7 @@ driver.quit()
 https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5-a0fd-41cd-b84a-76b3c2d5433f
 
 #### Requirement
-- PC/Laptop to active adb ~~(only first time)~~.
-- ~~Keep using if you dont want active again, because tcp serer will close after 10 minutes if you dont use~~.
+- PC/Laptop to active adb ***(if you Turn Off or Restart your device, you must do this again)***.
 
 #### Requirement Library
 ```
@@ -116,14 +115,14 @@ cd $HOME
 wget https://github.com/Lzhiyong/termux-ndk/releases/download/android-sdk/android-sdk-aarch64.zip
 unzip android-sdk-aarch64.zip -d android-sdk
 rm -r android-sdk-aarch64.zip
-echo "export ANDROID_HOME=/data/data/com.termux/files/home/android-sdk" >> $HOME/.bashrc
+echo "export ANDROID_HOME=$HOME/android-sdk" >> $HOME/.bashrc
 echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools" >> $HOME/.bashrc
 ```
 
 - After that, close termux and open again.
 
 #### Step
-- Open Settings.
+- Go to Settings.
 - Find Developer Mode.
 - Enable Developer Mode.
 - Enable USB connect.
@@ -141,6 +140,7 @@ echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOM
 
 - Type ```adb kill-server```.
 - Type ```adb connect <device ip>```.
+- Type ```adb devices```, if you see your device ip, then ```adb kill-server``` again.
 - Type ```appium``` for run adb server.
 - Try this test python script.
 
