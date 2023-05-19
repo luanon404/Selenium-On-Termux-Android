@@ -118,6 +118,8 @@ echo "export ANDROID_HOME=/data/data/com.termux/files/home/android-sdk" >> ~/.ba
 echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools" >> ~/.bashrc
 ```
 
+- After that, close termux and open again.
+
 #### Step
 - Enable Developer Mode.
 - Enable USB connect.
@@ -135,7 +137,6 @@ echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOM
 
 - Type ```adb kill-server```
 - Type ```adb connect <device ip>```.
-- After that, close termux and open termux again.
 - Type ```appium``` for run adb server.
 - Try this test python script.
 
