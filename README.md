@@ -4,14 +4,13 @@ Tutorial about how to install and use selenium on termux android.
 Appnium
 -------
 
-Big thanks to [@mauro199304](https://github.com/mauro199304) for this tutorial.
+- Big thanks to [@mauro199304](https://github.com/mauro199304) for this tutorial.
 
 https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5-a0fd-41cd-b84a-76b3c2d5433f
 
-Video tutorial
---------------
-
-I will record soon.
+#### Requirement Library
+- PC/Laptop to active adb (only first time).
+- Enjoy!
 
 Download
 --------
