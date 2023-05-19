@@ -94,7 +94,7 @@ driver.quit()
 </details>
 
 <details>
-<summary>Appnium</summary>
+<summary>Appnium (Dont try, updating)</summary>
 
 - Big thanks to [@mauro199304](https://github.com/mauro199304), [@remo7777](https://github.com/remo7777/), [@lzhiyong](https://github.com/lzhiyong) for this tutorial.
 - Tested on Android 9, you can also use command like ```adb install app.apk``` without error.
