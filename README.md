@@ -38,7 +38,7 @@ Step
 Installation
 ------------
 
-- Although it mentions Android in the tutorial, it actually guides you to use WebDriver for Windows. You can try using VNC Server, and you will see that it is working with Windows, not Android.
+- Although it mentions Android in the tutorial, it actually guides you to use WebDriver for Windows. You can try using VNC Server, and you will see that it is working with Windows, not Android. (Wrong, this not true, i will edit when i have time)
 
   <details>
   <summary>Selenium.</summary>
