@@ -95,12 +95,15 @@ driver.quit()
 </details>
 
 <details>
-<summary>Appnium (Dont try, updating)</summary>
+<summary>Appium (Dont try, updating)</summary>
 
 - Big thanks to [@mauro199304](https://github.com/mauro199304), [@remo7777](https://github.com/remo7777/), [@lzhiyong](https://github.com/lzhiyong) for this tutorial.
 - Tested on Android 9, you can also use command like ```adb install app.apk``` without error.
 
 https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5-a0fd-41cd-b84a-76b3c2d5433f
+
+#### Important
+- For who use this to control firefox, i dont know why firefox dont have context to switch, then this only work with chrome now.
 
 #### Requirement
 - PC/Laptop to active adb ***(If you Turn Off or Restart your device, you must do this again)***.
@@ -148,10 +151,34 @@ echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOM
 
 ```
 
-Error Handling Solution
------------------------
+#### Error Handling Solution
 
-- Updating (Too many errors😢).
+
+<details>
+<summary>Version not supported</summary>
+
+- This means you are using an old appium version, which does not support the current version.
+
+#### Solution
+- Type ```npm ls -g --depth=0```, if ```appium``` in this list, then type ```npm uninstall -g appium```.
+- Else type ```npm ls --depth=0```, if ```appium``` in this list, then type ```npm uninstall appium```.
+- Install again with global ```npm install -g appium --chromedriver-version="xxx.xxx.xxx.xxx"``` where xxx is your version.
+
+![version](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/c7bde0a4-e25c-407a-b7f3-05553318f133)
+
+- Then run appium with command ```appium --allow-insecure chromedriver_autodownload```.
+
+</details>
+
+<details>
+<summary>Cant switch context</summary>
+
+- This means you cant switch context at this momment, i have never used appium before, then i dont know why.
+
+#### Solution
+- Updating
+
+</details>
 
 </details>
 
