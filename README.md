@@ -186,7 +186,12 @@ Installation
     https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/d4d3fd6d-f790-438d-8e66-28ca6e37c8a3
 
     ### Important
-    - From android 11 you **dont** need PC/Laptop to enable adb. Watch this tutorial [video](https://youtu.be/NDAiJQxM7Fw) for how to enable adb on android 11.
+    - From android 11 you **dont** need PC/Laptop to enable adb server on android. Watch this [video](https://youtu.be/NDAiJQxM7Fw) for how to enable adb server on android 11 and above. After install just scroll down, continue step.
+    - If you have rooted device, use this command, you **dont** need PC/Laptop to enable adb server.
+      ```
+      su -c stop adbd && su -c start adbd
+      su -c setprop service.adb.tcp.port 5555
+      ```
 
     ### Requirements
     - PC/Laptop to activate adb ***(If you turn off or restart your device, you must do this again)***.
