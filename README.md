@@ -226,7 +226,7 @@ Installation
     - Make sure you only see `emulator-5554` from list with attached is device.
     
     ### Chromium
-    - [Download link](https://github.com/macchrome/droidchrome/tags) (current selenium only support chromium 110)
+    - [Download link](https://github.com/macchrome/droidchrome/tags) (current selenium only support chromium <=110)
 
       ```
       from selenium import webdriver
