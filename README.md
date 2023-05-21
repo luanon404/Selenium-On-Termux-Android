@@ -178,7 +178,7 @@ Installation
   <details>
   <summary>Using Selenium with a Non-Headless Android WebDriver.</summary>
 
-    [Image](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5-a0fd-41cd-b84a-76b3c2d5433f)
+    https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/d4d3fd6d-f790-438d-8e66-28ca6e37c8a3
 
     ### Requirements
     - PC/Laptop to activate adb ***(If you turn off or restart your device, you must do this again)***.
@@ -235,7 +235,7 @@ Installation
       driver.quit()
       ```
     
-    ### GeckoDriver (testing)
+    ### GeckoDriver ( I dont know how to run this :P )
     - [Download link](https://github.com/mozilla/geckodriver/releases/) (Download aarch64 version)
 
       ```
