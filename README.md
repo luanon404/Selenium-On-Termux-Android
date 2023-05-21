@@ -178,9 +178,6 @@ Installation
   <details>
   <summary>Using Selenium with a Non-Headless Android WebDriver.</summary>
 
-  - Tested on Android 9. You can also use commands like `adb install app.apk` without errors.
-  - Some devices like OPPO (my current phone) may not be able to use this method due to insufficient permissions for adb (must root). In such cases, please choose either option 1 or 2 instead.
-
     [Image](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5-a0fd-41cd-b84a-76b3c2d5433f)
 
     ### Requirements
@@ -200,7 +197,7 @@ Installation
     - After that, close Termux and open it again ***(Make sure you killed all sessions)***.
 
     ### Step
-    - Go to Settings.
+    - Go to your phone Settings.
     - Find Developer Mode.
     - Enable Developer Mode.
     - Follow me this step.
@@ -216,18 +213,36 @@ Installation
     - If it returns `Restricted`, then type `Set-ExecutionPolicy AllSigned` or `Set-ExecutionPolicy Bypass -Scope Process`.
     - Type `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`.
     - After installing Choco, type `choco install adb`.
-    - Open the command prompt, type `adb devices`.
-    - \** Just run this to allow termux write secure settings `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
+    - Open the command prompt on PC/Laptop, type `adb devices`.
+    - Then continue type `adb tcpip 5555`.
+    - \** And run this to allow termux write secure settings `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
     - From now on, you can unplug the USB cable connecting to the PC/Laptop.
-    - Type `adb devices`. If you see something like IPv4 address, then type `adb kill-server`.
-    - Make sure you only see `emulator-5554` from list.
-    - Try running this test Python script (Chrome). For Firefox, it seems that you need to download the driver from [this link](https://github.com/mozilla/geckodriver/releases/tag/v0.33.0). I'm not sure about the installation process, but I will update you later.
+    - Open Termux.
+    - Type `adb kill-server`.
+    - Then type `adb devices`.
+    - Make sure you only see `emulator-5554` from list with attached is device.
+    
+    ### Chromium
+    - [My upload](https://github.dev/luanon404/Selenium-On-Termux-Android/raw/main/chromedriver) or [Download link](https://chromedriver.chromium.org/downloads) (current selenium only support chromium 110)
 
       ```
       from selenium import webdriver
-      chrome_options = webdriver.ChromeOptions()
-      chrome_options.add_experimental_option("androidPackage", "com.android.chrome")
-      driver = webdriver.Chrome(options=chrome_options)
+      from selenium.webdriver.chrome.service import Service
+      service = Service(executable_path="/path/to/chromedriver")
+      driver = webdriver.Chrome(service=service)
+      driver.get("https://www.google.com")
+      print("Page title:", driver.title)
+      driver.quit()
+      ```
+    
+    ### GeckoDriver
+    - [My upload](https://github.dev/luanon404/Selenium-On-Termux-Android/raw/main/geckodriver) or [Download link](https://github.com/mozilla/geckodriver/releases/) (Download aarch64 version)
+
+      ```
+      from selenium import webdriver
+      from selenium.webdriver.firefox.service import Service
+      service = Service(executable_path="/path/to/geckodriver")
+      driver = webdriver.Firefox(service=service)
       driver.get("https://www.google.com")
       print("Page title:", driver.title)
       driver.quit()
@@ -246,13 +261,6 @@ Installation
         rm -r openjdk-11.0.12-aarch64.zip
         echo "export PATH=$PATH:$HOME/openjdk-11.0.12/bin" >> $HOME/.bashrc
         echo "export JAVA_HOME=$HOME/openjdk-11.0.12" >> $HOME/.bashrc
-        ```
-
-    - **ADB clearing user data is forbidden:**
-      - This indicates that you need to root device.
-      - Step
-        ```
-        There are many tutorial about root, but I don't recommend doing that, use option 1 or 2 instead.
         ```
 
   </details>
