@@ -217,7 +217,7 @@ Installation
     - Type `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`.
     - After installing Choco, type `choco install adb`.
     - Open the command prompt, type `adb devices`.
-    - \** Just run this to allow termux write secure setting `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
+    - \** Just run this to allow termux write secure settings `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
     - From now on, you can unplug the USB cable connecting to the PC/Laptop.
     - Type `adb devices`. If you see something like IPv4 address, then type `adb kill-server`.
     - Make sure you only see `emulator-5554` from list.
