@@ -237,36 +237,23 @@ Installation
       print("Page title:", driver.title)
       driver.quit()
       ```
-    
-    ### GeckoDriver ( I dont know how to run this :P )
-    - [Download link](https://github.com/mozilla/geckodriver/releases/) (Download aarch64 version)
 
+  <details>
+  <summary>Error Handling Solution.</summary>
+
+  - **Missing java library:**
+    - This indicates that you need to install Java.
+    - Step
       ```
-      from selenium import webdriver
-      from selenium.webdriver.firefox.service import Service
-      service = Service(executable_path="/path/to/geckodriver")
-      driver = webdriver.Firefox(service=service)
-      driver.get("https://www.google.com")
-      print("Page title:", driver.title)
-      driver.quit()
+      cd $HOME
+      wget https://github.com/lzhiyong/termux-ndk/releases/download/openjdk/openjdk-11.0.12-aarch64.zip
+      unzip openjdk-11.0.12-aarch64.zip -d openjdk-11.0.12
+      rm -r openjdk-11.0.12-aarch64.zip
+      echo "export PATH=$PATH:$HOME/openjdk-11.0.12/bin" >> $HOME/.bashrc
+      echo "export JAVA_HOME=$HOME/openjdk-11.0.12" >> $HOME/.bashrc
       ```
 
-    <details>
-    <summary>Error Handling Solution.</summary>
-
-    - **Missing java library:**
-      - This indicates that you need to install Java.
-      - Step
-        ```
-        cd $HOME
-        wget https://github.com/lzhiyong/termux-ndk/releases/download/openjdk/openjdk-11.0.12-aarch64.zip
-        unzip openjdk-11.0.12-aarch64.zip -d openjdk-11.0.12
-        rm -r openjdk-11.0.12-aarch64.zip
-        echo "export PATH=$PATH:$HOME/openjdk-11.0.12/bin" >> $HOME/.bashrc
-        echo "export JAVA_HOME=$HOME/openjdk-11.0.12" >> $HOME/.bashrc
-        ```
-
-  </details>
+</details>
 
 References
 ----------
