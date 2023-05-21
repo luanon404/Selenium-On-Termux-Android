@@ -220,6 +220,7 @@ Installation
     - Then continue type `adb tcpip 5555`.
     - \** And run this to allow termux write secure settings `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
     - From now on, you can unplug the USB cable connecting to the PC/Laptop.
+    - `Android 11 start from here (You dont need above steps)`.
     - Open Termux.
     - Type `adb kill-server`.
     - Then type `adb devices`.
