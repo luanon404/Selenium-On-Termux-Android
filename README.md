@@ -223,20 +223,20 @@ Installation
     - Make sure you only see `emulator-5554` from list with attached is device.
     
     ### Chromium
-    - [My upload](https://github.com/luanon404/Selenium-On-Termux-Android/raw/main/chromedriver) or [Download link](https://chromedriver.chromium.org/downloads) (current selenium only support chromium 110)
+    - [Download link](https://github.com/macchrome/droidchrome/tags) (current selenium only support chromium 110)
 
       ```
       from selenium import webdriver
-      from selenium.webdriver.chrome.service import Service
-      service = Service(executable_path="/path/to/chromedriver")
-      driver = webdriver.Chrome(service=service)
+      chrome_options = webdriver.ChromeOptions()
+      chrome_options.add_experimental_option("androidPackage", "org.chromium.chrome")
+      driver = webdriver.Chrome(options=chrome_options)
       driver.get("https://www.google.com")
       print("Page title:", driver.title)
       driver.quit()
       ```
     
-    ### GeckoDriver
-    - [My upload](https://github.com/luanon404/Selenium-On-Termux-Android/raw/main/geckodriver) or [Download link](https://github.com/mozilla/geckodriver/releases/) (Download aarch64 version)
+    ### GeckoDriver (testing)
+    - [Download link](https://github.com/mozilla/geckodriver/releases/) (Download aarch64 version)
 
       ```
       from selenium import webdriver
