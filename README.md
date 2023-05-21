@@ -180,6 +180,9 @@ Installation
 
     https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/d4d3fd6d-f790-438d-8e66-28ca6e37c8a3
 
+    ### Important
+    - From android 11 you **dont** need PC/Laptop to enable adb.
+
     ### Requirements
     - PC/Laptop to activate adb ***(If you turn off or restart your device, you must do this again)***.
 
