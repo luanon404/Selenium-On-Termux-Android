@@ -176,7 +176,7 @@ Installation
   </details>
 
   <details>
-  <summary>Using Selenium with a Headless Android WebDriver.</summary>
+  <summary>Using Selenium with a Non-Headless Android WebDriver.</summary>
 
   - Tested on Android 9. You can also use commands like `adb install app.apk` without errors.
   - Some devices like OPPO (my current phone) may not be able to use this method due to insufficient permissions for adb (must root). In such cases, please choose either option 1 or 2 instead.
