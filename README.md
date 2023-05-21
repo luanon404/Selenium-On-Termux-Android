@@ -228,7 +228,7 @@ Installation
       ```
       from selenium import webdriver
       chrome_options = webdriver.ChromeOptions()
-      chrome_options.add_experimental_option("androidPackage", "org.chromium.chrome")
+      chrome_options.add_experimental_option("androidPackage", "org.chromium.chrome.stable")
       driver = webdriver.Chrome(options=chrome_options)
       driver.get("https://www.google.com")
       print("Page title:", driver.title)
