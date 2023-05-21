@@ -223,7 +223,7 @@ Installation
     - Make sure you only see `emulator-5554` from list with attached is device.
     
     ### Chromium
-    - [My upload](https://github.dev/luanon404/Selenium-On-Termux-Android/raw/main/chromedriver) or [Download link](https://chromedriver.chromium.org/downloads) (current selenium only support chromium 110)
+    - [My upload](https://github.com/luanon404/Selenium-On-Termux-Android/raw/main/chromedriver) or [Download link](https://chromedriver.chromium.org/downloads) (current selenium only support chromium 110)
 
       ```
       from selenium import webdriver
@@ -236,7 +236,7 @@ Installation
       ```
     
     ### GeckoDriver
-    - [My upload](https://github.dev/luanon404/Selenium-On-Termux-Android/raw/main/geckodriver) or [Download link](https://github.com/mozilla/geckodriver/releases/) (Download aarch64 version)
+    - [My upload](https://github.com/luanon404/Selenium-On-Termux-Android/raw/main/geckodriver) or [Download link](https://github.com/mozilla/geckodriver/releases/) (Download aarch64 version)
 
       ```
       from selenium import webdriver
