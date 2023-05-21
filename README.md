@@ -202,7 +202,13 @@ Installation
     - Go to Settings.
     - Find Developer Mode.
     - Enable Developer Mode.
-    - Enable USB connect.
+    - Follow me this step.
+
+      ![photo_2023-05-21_15-30-10](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/27552cb2-560e-4e85-82c9-c494b05a71e3)
+
+      ![photo_2023-05-21_15-30-31](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/ae1e36b4-dcf4-4e9f-920a-1c3781b089af)
+
+    - If your device doesn't match or is not similar to my phone, then try [this solution](https://stackoverflow.com/questions/52079343/how-can-i-use-adb-to-grant-permission-without-root).
     - Connect your phone to PC/Laptop using a USB cable.
     - On PC/Laptop, open the shell with administrator privileges.
     - Type `Get-ExecutionPolicy`.
@@ -212,7 +218,7 @@ Installation
     - Open the command prompt, type `adb devices`.
     - \** Just run this to allow termux write secure setting `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
     - From now on, you can unplug the USB cable connecting to the PC/Laptop.
-    - Type `adb devices`. If you see something like IPv4, then type `adb kill-server`.
+    - Type `adb devices`. If you see something like IPv4 address, then type `adb kill-server`.
     - Make sure you only see `emulator-5554` from list.
     - Try running this test Python script (Chrome). For Firefox, it seems that you need to download the driver from [this link](https://github.com/mozilla/geckodriver/releases/tag/v0.33.0). I'm not sure about the installation process, but I will update you later.
 
