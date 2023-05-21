@@ -182,9 +182,6 @@ Installation
 
     [Image](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5-a0fd-41cd-b84a-76b3c2d5433f)
 
-    ### Important
-    - For those using this to control Firefox, I don't know why Firefox doesn't have the context to switch. Therefore, this feature only works with Chrome for now.
-
     ### Requirements
     - PC/Laptop to activate adb ***(If you turn off or restart your device, you must do this again)***.
 
