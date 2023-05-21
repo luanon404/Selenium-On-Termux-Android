@@ -178,7 +178,7 @@ Installation
 
   - Special thanks to [@mauro199304](https://github.com/mauro199304), [@remo7777](https://github.com/remo7777/), [@lzhiyong](https://github.com/lzhiyong) for this tutorial.
   - Tested on Android 9. You can also use commands like `adb install app.apk` without errors.
-  - Some devices like OPPO (my current phone) may not be able to use this method due to insufficient permissions for adb. In such cases, please choose either option 1 or 2 instead.
+  - Some devices like OPPO (my current phone) may not be able to use this method due to insufficient permissions for adb (must root). In such cases, please choose either option 1 or 2 instead.
 
     [Image](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/07e21df5-a0fd-41cd-b84a-76b3c2d5433f)
 
