@@ -107,6 +107,8 @@ Installation
     - **Advantages:** `Why 'Desktop'? Just try it, you will know why, this install only need to download a few additional things, it's not difficult at all`.
     - **Disadvantages:** `However, this still doesn't reach my goal. If you need to use Selenium to control Chrome or Firefox (Android), please follow the instructions below`.
 
+      https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/4e5ed0bf-c1d8-4357-b034-9d0842f303b4
+
     <ul>
 
     <li>
@@ -176,7 +178,6 @@ Installation
   <details>
   <summary>Using Selenium with a Headless Android WebDriver.</summary>
 
-  - Special thanks to [@mauro199304](https://github.com/mauro199304), [@remo7777](https://github.com/remo7777/), [@lzhiyong](https://github.com/lzhiyong) for this tutorial.
   - Tested on Android 9. You can also use commands like `adb install app.apk` without errors.
   - Some devices like OPPO (my current phone) may not be able to use this method due to insufficient permissions for adb (must root). In such cases, please choose either option 1 or 2 instead.
 
@@ -204,9 +205,9 @@ Installation
     - Enable Developer Mode.
     - Follow me this step.
 
-      ![photo_2023-05-21_15-30-10](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/27552cb2-560e-4e85-82c9-c494b05a71e3)
+      ![settings_1](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/27552cb2-560e-4e85-82c9-c494b05a71e3)
 
-      ![photo_2023-05-21_15-30-31](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/ae1e36b4-dcf4-4e9f-920a-1c3781b089af)
+      ![settings_2](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/ae1e36b4-dcf4-4e9f-920a-1c3781b089af)
 
     - If your device doesn't match or is not similar to my phone, then try [this solution](https://stackoverflow.com/questions/52079343/how-can-i-use-adb-to-grant-permission-without-root).
     - Connect your phone to PC/Laptop using a USB cable.
@@ -259,5 +260,6 @@ Installation
 References
 ----------
 
+- Special thanks to [@mauro199304](https://github.com/mauro199304), [@remo7777](https://github.com/remo7777/), [@lzhiyong](https://github.com/lzhiyong) for this tutorial.
 - [Termux Desktop Xfce](https://github.com/Yisus7u7/termux-desktop-xfce)
 - [Termux Issues](https://github.com/termux/termux-packages/issues/2149)
