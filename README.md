@@ -7,7 +7,7 @@ Selenium-On-Termux-Android
 Dont like english?
 ------------------
 
-[![vietnamese](https://img.shields.io/badge/lang-vietnamese-red.svg)](https://github.com/luanon404/Selenium-On-Termux-Android/edit/main/README.vi.md)
+[![vietnamese](https://img.shields.io/badge/lang-vietnamese-red.svg)](https://github.com/luanon404/Selenium-On-Termux-Android/blob/main/README.vi.md)
 
 Download
 --------
