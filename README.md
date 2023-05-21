@@ -4,6 +4,11 @@ Selenium-On-Termux-Android
 - This tutorial provides instructions on how to install and use Selenium on Termux for Android.
 - I used ChatGPT to correct grama, because my english is not good, but that is not problem, enjoy!
 
+Dont like english?
+------------------
+
+[![vietnamese](https://img.shields.io/badge/lang-vietnamese-red.svg)](https://github.com/luanon404/Selenium-On-Termux-Android/edit/main/README.vi.md)
+
 Download
 --------
 
