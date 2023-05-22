@@ -121,6 +121,7 @@ Installation
     <summary>Install VNC Server.</summary>
 
     - Run `curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh | bash`.
+    - At the end of installation, you will receive notice to input password, remember this password if you want login VNC Viewer from CH Play.
     - Start the VNC server by typing `vncserver -listen tcp`, for first time you will see it show something like `New 'localhost:1 ()' desktop is localhost:1`, then `localhost:1` is your display ip address.
     - You can download VNC Viewer from CH Play to view your webdriver, just use `localhost:1` as the ip address.
 
