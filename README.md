@@ -186,7 +186,7 @@ Installation
     https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/d4d3fd6d-f790-438d-8e66-28ca6e37c8a3
 
     ### Important
-    - ***If you turn off or restart your device, you must do this again***.
+    - ***If you turn off or restart your device, you must enable adb server again***.
 
     ### Required Libraries
     ```
