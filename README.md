@@ -185,8 +185,8 @@ Installation
 
     https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/d4d3fd6d-f790-438d-8e66-28ca6e37c8a3
 
-    ### Requirements
-    - PC/Laptop to activate adb ***(If you turn off or restart your device, you must do this again)***.
+    ### Important
+    - ***If you turn off or restart your device, you must do this again***.
 
     ### Required Libraries
     ```
@@ -203,7 +203,7 @@ Installation
 
     ### Step
     <details>
-    <summary>First (very important), you need to enable ADB server, there is 3 ways to do that.</summary>
+    <summary>First (very important), you need to enable adb server, there is 3 ways to do that.</summary>
     <ul>
 
     <li>
