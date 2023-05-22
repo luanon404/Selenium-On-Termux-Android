@@ -35,10 +35,10 @@ Step
 
   </details>
 
-- Type `termux-setup-storage`.
+- Run `termux-setup-storage`.
 - Reopen the Termux app.
-- Type `yes | pkg update -y && yes | pkg upgrade -y`.
-- Type `pip install selenium`.
+- Run `yes | pkg update -y && yes | pkg upgrade -y`.
+- Run `pip install selenium`.
 
 Installation
 ------------
@@ -120,7 +120,7 @@ Installation
     <details>
     <summary>Install VNC Server.</summary>
 
-    - Type `curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh | bash`.
+    - Run `curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh | bash`.
     - Start the VNC server by typing `vncserver -listen tcp`, for first time you will see it show something like `New 'localhost:1 ()' desktop is localhost:1`, then `localhost:1` is your display ip address.
     - You can download VNC Viewer from CH Play to view your webdriver, just use `localhost:1` as the ip address.
 
@@ -185,14 +185,6 @@ Installation
 
     https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/d4d3fd6d-f790-438d-8e66-28ca6e37c8a3
 
-    ### Important
-    - From android 11 you **dont** need PC/Laptop to enable adb server on android. Watch this [video](https://youtu.be/NDAiJQxM7Fw) for how to enable adb server on android 11 and above. After install just scroll down, continue step.
-    - If you have rooted device, use this command, you **dont** need PC/Laptop to enable adb server.
-      ```
-      su -c stop adbd && su -c start adbd
-      su -c setprop service.adb.tcp.port 5555
-      ```
-
     ### Requirements
     - PC/Laptop to activate adb ***(If you turn off or restart your device, you must do this again)***.
 
@@ -210,6 +202,37 @@ Installation
     - After that, close Termux and open it again ***(Make sure you killed all sessions)***.
 
     ### Step
+    <details>
+    <summary>First (very important), you need to enable ADB server, there is 3 ways to do that.</summary>
+    <ul>
+
+    <li>
+    <details>
+    <summary>I have a rooted device.</summary>
+
+    - Then this will be easy, run this command, you **dont** need PC/Laptop to enable adb server.
+
+      ```
+      su -c stop adbd && su -c start adbd
+      su -c setprop service.adb.tcp.port 5555
+      ```
+
+    </details>
+    </li>
+
+    <li>
+    <details>
+    <summary>I have an Android phone running Android 11 and above.</summary>
+
+    - From android 11 you **dont** need PC/Laptop to enable adb server on android. Watch this [video](https://youtu.be/NDAiJQxM7Fw) for how to enable adb server on android 11 and above. After install just scroll down, continue step.
+
+    </details>
+    </li>
+
+    <li>
+    <details>
+    <summary>I have PC/Laptop</summary>
+
     - Go to your phone Settings.
     - Find Developer Mode.
     - Enable Developer Mode.
@@ -222,20 +245,28 @@ Installation
     - If your device doesn't match or is not similar to my phone, then try [this solution](https://stackoverflow.com/questions/52079343/how-can-i-use-adb-to-grant-permission-without-root).
     - Connect your phone to PC/Laptop using a USB cable.
     - On PC/Laptop, open the shell with administrator privileges.
-    - Type `Get-ExecutionPolicy`.
-    - If it returns `Restricted`, then type `Set-ExecutionPolicy AllSigned` or `Set-ExecutionPolicy Bypass -Scope Process`.
-    - Type `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`.
-    - After installing Choco, type `choco install adb`.
-    - Open the command prompt on PC/Laptop, type `adb devices`.
-    - Then continue type `adb tcpip 5555`.
-    - \** And run this to allow termux write secure settings `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
+    - Next, you need to install Choco (This is a very easy way to install adb).
+    - Run `Get-ExecutionPolicy`.
+    - If it returns `Restricted`, then run `Set-ExecutionPolicy AllSigned` or `Set-ExecutionPolicy Bypass -Scope Process`.
+    - Run `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`.
+    - After installing Choco, run `choco install adb`.
+    - Open the command prompt on PC/Laptop, run `adb devices`.
+    - Then continue run `adb tcpip 5555`.
+    - \** And run this (I don't know if it's very important or not, but my Oppo phone needs this to run successfully) to allow termux write secure settings `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
     - From now on, you can unplug the USB cable connecting to the PC/Laptop.
-    - `Android 11 start from here (You dont need above steps)`.
+
+    </details>
+    </li>
+
+    </ul>
+    </details>
+
+    - Make sure you have enabled the adb server.
     - Open Termux.
-    - Type `adb kill-server`.
-    - Then type `adb devices`.
-    - Make sure you only see `emulator-5554` from list with attached is device.
-    
+    - Run `adb kill-server`.
+    - Then run `adb devices`.
+    - Make sure you only see `emulator-5554` in the list, with the attached `device`.
+
     ### Chromium
     - [Download link](https://github.com/macchrome/droidchrome/tags) (current selenium only support chromium <=110)
 
