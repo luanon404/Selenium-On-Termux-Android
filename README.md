@@ -186,9 +186,6 @@ Installation
 
     https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/d4d3fd6d-f790-438d-8e66-28ca6e37c8a3
 
-    ### Important
-    - ***If you turn off or restart your device, you must enable adb server again***.
-
     ### Required Libraries
     ```
     yes | pkg install wget -y
@@ -268,8 +265,12 @@ Installation
     - Then run `adb devices`.
     - Make sure you only see `emulator-5554` in the list, with the attached `device`.
 
+    ### Important
+    - ***If you turn off or restart your device, you must enable adb server again***.
+    - If you close termux app and open again, you need to active adb server by run `adb devices`.
+
     ### Chromium
-    - [Download link](https://github.com/macchrome/droidchrome/tags) (current selenium only support chromium <=110)
+    - [Download link](https://github.com/macchrome/droidchrome/tags) (current selenium only support chromium <=110),
 
       ```
       from selenium import webdriver
