@@ -273,6 +273,8 @@ Installation
     - [Download link](https://github.com/macchrome/droidchrome/tags) (current selenium only support chromium <=110),
 
       ```
+      import os
+      os.system("adb devices")
       from selenium import webdriver
       chrome_options = webdriver.ChromeOptions()
       chrome_options.add_experimental_option("androidPackage", "org.chromium.chrome.stable")
