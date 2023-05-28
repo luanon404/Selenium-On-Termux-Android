@@ -259,6 +259,7 @@ Installation
     </ul>
     </details>
 
+    - \--------------------------------------------------
     - Make sure you have enabled the adb server.
     - Open Termux.
     - Run `adb kill-server`.
