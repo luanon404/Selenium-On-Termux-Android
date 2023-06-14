@@ -275,7 +275,8 @@ Installation
     - If you close termux app and open again, you need to active adb server by run `adb devices`.
 
     ### Chromium
-    - [Download link](https://github.com/macchrome/droidchrome/tags) (current selenium only support chromium <=110),
+    - [Download link](https://github.com/macchrome/droidchrome/tags) (current selenium only support chromium <= 110).
+    - Or use this [link](https://github.com/macchrome/droidchrome/releases/download/v110.5481.153-M110.0.5481.153-r1191-Ungoogled-And64/arm64_ChromePublic_HEVC-110.0.5481.153.apk) for fast download.
 
       ```
       import os
