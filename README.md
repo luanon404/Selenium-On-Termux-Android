@@ -46,7 +46,7 @@ Installation
 - There are many types of selenium, the choice depends on your specific needs or requirements.
 
   <details>
-  <summary>Using Selenium with a Headless WebDriver.</summary>
+  <summary>Using Selenium with a Headless Desktop WebDriver.</summary>
 
     - **Advantages:** `Instead of complex installations, just use the 'pkg' command`.
     - **Disadvantages:** `This does not have a GUI or 'graphical user interface'`.
