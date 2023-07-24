@@ -2,12 +2,6 @@ Selenium-On-Termux-Android
 --------------------------
 
 - This tutorial provides instructions on how to install and use Selenium on Termux for Android.
-- I used ChatGPT to correct grama, because my english is not good, but that is not problem, enjoy!
-
-Dont like english?
-------------------
-
-[![vietnamese](https://img.shields.io/badge/lang-vietnamese-red.svg)](https://github.com/luanon404/Selenium-On-Termux-Android/blob/main/README.vi.md)
 
 Download
 --------
@@ -205,7 +199,7 @@ Installation
 
     ### Step
     <details>
-    <summary>First (very important), you need to enable adb server, there is 3 ways to do that.</summary>
+    <summary>First (very important), you need to enable adb server, there is 2 ways to do that.</summary>
     <ul>
 
     <li>
@@ -218,15 +212,6 @@ Installation
       su -c stop adbd && su -c start adbd
       su -c setprop service.adb.tcp.port 5555
       ```
-
-    </details>
-    </li>
-
-    <li>
-    <details>
-    <summary>I have an Android phone running Android 11 and above.</summary>
-
-    - From android 11 you **dont** need PC/Laptop to enable adb server on android. Watch this [video](https://youtu.be/NDAiJQxM7Fw) for how to enable adb server on android 11 and above. After install just scroll down, continue step.
 
     </details>
     </li>
