@@ -198,57 +198,38 @@ Installation
     - After that, close Termux and open it again ***(Make sure you killed all sessions)***.
 
     ### Step
-    <details>
-    <summary>First (very important), you need to enable adb server, there is 2 ways to do that.</summary>
-    <ul>
 
-    <li>
-    <details>
-    <summary>I have a rooted device.</summary>
+    - You ***MUST*** have PC/Laptop to enable adb server.
 
-    - Then this will be easy, run this command, you **dont** need PC/Laptop to enable adb server.
+      <li>
+      <details>
+      <summary>Step</summary>
+    
+      - Go to your phone Settings.
+      - Find Developer Mode.
+      - Enable Developer Mode.
+      - Follow me this step.
+    
+        ![settings_1](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/27552cb2-560e-4e85-82c9-c494b05a71e3)
+    
+        ![settings_2](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/ae1e36b4-dcf4-4e9f-920a-1c3781b089af)
+    
+      - If your device doesn't match or is not similar to my phone, then try [this solution](https://stackoverflow.com/questions/52079343/how-can-i-use-adb-to-grant-permission-without-root).
+      - Connect your phone to PC/Laptop using a USB cable.
+      - On PC/Laptop, open the shell with administrator privileges.
+      - Next, you need to install Choco (This is a very easy way to install adb).
+      - Run `Get-ExecutionPolicy`.
+      - If it returns `Restricted`, then run `Set-ExecutionPolicy AllSigned` or `Set-ExecutionPolicy Bypass -Scope Process`.
+      - Run `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`.
+      - After installing Choco, run `choco install adb`.
+      - Open the command prompt on PC/Laptop, run `adb devices`.
+      - Then continue run `adb tcpip 5555`.
+      - \** And run this (I don't know if it's very important or not, but my Oppo phone needs this to run successfully) to allow termux write secure settings `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
+      - From now on, you can unplug the USB cable connecting to the PC/Laptop.
+    
+      </details>
+      </li>
 
-      ```
-      su -c stop adbd && su -c start adbd
-      su -c setprop service.adb.tcp.port 5555
-      ```
-
-    </details>
-    </li>
-
-    <li>
-    <details>
-    <summary>I have PC/Laptop</summary>
-
-    - Go to your phone Settings.
-    - Find Developer Mode.
-    - Enable Developer Mode.
-    - Follow me this step.
-
-      ![settings_1](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/27552cb2-560e-4e85-82c9-c494b05a71e3)
-
-      ![settings_2](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/ae1e36b4-dcf4-4e9f-920a-1c3781b089af)
-
-    - If your device doesn't match or is not similar to my phone, then try [this solution](https://stackoverflow.com/questions/52079343/how-can-i-use-adb-to-grant-permission-without-root).
-    - Connect your phone to PC/Laptop using a USB cable.
-    - On PC/Laptop, open the shell with administrator privileges.
-    - Next, you need to install Choco (This is a very easy way to install adb).
-    - Run `Get-ExecutionPolicy`.
-    - If it returns `Restricted`, then run `Set-ExecutionPolicy AllSigned` or `Set-ExecutionPolicy Bypass -Scope Process`.
-    - Run `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`.
-    - After installing Choco, run `choco install adb`.
-    - Open the command prompt on PC/Laptop, run `adb devices`.
-    - Then continue run `adb tcpip 5555`.
-    - \** And run this (I don't know if it's very important or not, but my Oppo phone needs this to run successfully) to allow termux write secure settings `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
-    - From now on, you can unplug the USB cable connecting to the PC/Laptop.
-
-    </details>
-    </li>
-
-    </ul>
-    </details>
-
-    - \--------------------------------------------------
     - Make sure you have enabled the adb server.
     - Open Termux.
     - Run `adb kill-server`.
