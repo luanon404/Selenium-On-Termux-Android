@@ -1,3 +1,6 @@
+This may not work right now due termux (not phone problem)
+-----------------------------------------------------------------
+
 Selenium-On-Termux-Android
 --------------------------
 
