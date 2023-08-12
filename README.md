@@ -197,23 +197,40 @@ Installation
 
     - After that, close Termux and open it again ***(Make sure you killed all sessions)***.
 
-    ### Step
+    ### Enable ADB Server
+    - First (very important), you need to enable adb server, there is 3 ways to do that.
 
-    - You ***MUST*** have PC/Laptop to enable adb server.
-
-      <li>
       <details>
-      <summary>Step</summary>
-    
+      <summary>I have a rooted device.</summary>
+
+      - Then this will be easy, run this command, you **dont** need PC/Laptop to enable adb server.
+
+        ```
+        su -c stop adbd && su -c start adbd
+        su -c setprop service.adb.tcp.port 5555
+        ```
+
+      </details>
+
+      <details>
+      <summary>I have an Android phone running Android 11 and above.</summary>
+
+      - From android 11 you **dont** need PC/Laptop to enable adb server on android. Watch this [video](https://youtu.be/NDAiJQxM7Fw) for how to enable adb server on android 11 and above. After install just scroll down, continue step.
+
+      </details>
+
+      <details>
+      <summary>I have PC/Laptop</summary>
+
       - Go to your phone Settings.
       - Find Developer Mode.
       - Enable Developer Mode.
       - Follow me this step.
-    
+
         ![settings_1](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/27552cb2-560e-4e85-82c9-c494b05a71e3)
-    
+
         ![settings_2](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/ae1e36b4-dcf4-4e9f-920a-1c3781b089af)
-    
+
       - If your device doesn't match or is not similar to my phone, then try [this solution](https://stackoverflow.com/questions/52079343/how-can-i-use-adb-to-grant-permission-without-root).
       - Connect your phone to PC/Laptop using a USB cable.
       - On PC/Laptop, open the shell with administrator privileges.
@@ -226,15 +243,16 @@ Installation
       - Then continue run `adb tcpip 5555`.
       - \** And run this (I don't know if it's very important or not, but my Oppo phone needs this to run successfully) to allow termux write secure settings `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
       - From now on, you can unplug the USB cable connecting to the PC/Laptop.
-    
-      </details>
-      </li>
 
+      </details>
+
+    ### Step
     - Make sure you have enabled the adb server.
     - Open Termux.
     - Run `adb kill-server`.
     - Then run `adb devices`.
-    - Make sure you only see `emulator-5554` in the list, with the attached `device`.
+    - ![image](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/a59a6145-dd56-4a58-bf0d-1a58d4999fad)
+    - Make sure you only see `emulator-5554` in the list.
 
     ### Important
     - ***If you turn off or restart your device, you must enable adb server again***.
