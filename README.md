@@ -215,7 +215,9 @@ Installation
       <details>
       <summary>I have an Android phone running Android 11 and above.</summary>
 
-      - From android 11 you **dont** need PC/Laptop to enable adb server on android. Watch this [video](https://youtu.be/NDAiJQxM7Fw) for how to enable adb server on android 11 and above. After install just scroll down, continue step.
+      - From android 11 you **dont** need PC/Laptop to enable adb server on android. Watch this [video](https://youtu.be/KCODAyc_6rU) for how to enable adb server on android 11 and above.
+      - Then run `adb devices`.
+      - Then continue run `adb tcpip 5555`.
 
       </details>
 
