@@ -32,6 +32,7 @@ Step
 - Run `termux-setup-storage`.
 - Reopen the Termux app.
 - Run `yes | pkg update -y && yes | pkg upgrade -y`.
+- Install pip `pkg install python-pip`.
 - Run `pip install selenium==4.9.1` (***PLEASE MAKE SURE YOUR SELENIUM VERSION <= 4.9.1***, since version 4.9.1 selenium has updated its code to automatically locate the ChromeDriver, which will raise exception when you run on android).
 
 Installation
