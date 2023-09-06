@@ -26,7 +26,7 @@ Step | To do |
 6 | Update & Upgrade package |
 7 | `yes \| pkg update -y && yes \| pkg upgrade -y` |
 8 | Install pip (they seperated it from python) |
-9 | `pkg install python-pip` |
+9 | `yes \| pkg install python-pip -y` |
 10 | Install selenium |
 11 | `pip install selenium==4.9.1` |
 12 | ***PLEASE MAKE SURE YOUR SELENIUM VERSION <= 4.9.1*** |
