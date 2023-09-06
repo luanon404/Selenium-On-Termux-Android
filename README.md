@@ -76,7 +76,6 @@ driver = webdriver.Firefox(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
 driver.quit()</pre></td>
-    <td></td>
   </tr>
   <tr>
     <td>Non-Headless</td>
@@ -97,7 +96,6 @@ driver = webdriver.Firefox(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
 driver.quit()</pre></td>
-    <td></td>
   </tr>
 </table>
 
