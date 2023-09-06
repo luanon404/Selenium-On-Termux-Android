@@ -128,6 +128,17 @@ Chrome | Firefox |
   echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools" >> $HOME/.bashrc
   ```
 
+### Requirements
+
+- You ***MUST*** install this to make it work.
+
+  ```
+  yes | pkg install android-tools -y
+  yes | pkg install x11-repo -y
+  yes | pkg install tur-repo -y
+  yes | pkg install chromium -y
+  ```
+
 ### Enable ADB Server
 
 - You need ADB Server for selenium.
