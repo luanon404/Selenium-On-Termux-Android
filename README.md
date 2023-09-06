@@ -102,66 +102,71 @@ driver.quit()</pre></td>
 Chromium on Android (adb required)
 ----------------------------------
 
-  ### Install Android SDK
+### Install Android SDK
 
-  - You need Android SDK to use adb control.
+- You need Android SDK to use adb control.
 
-    ```
-    yes | pkg install wget -y
-    cd $HOME
-    wget https://github.com/Lzhiyong/termux-ndk/releases/download/android-sdk/android-sdk-aarch64.zip
-    unzip android-sdk-aarch64.zip -d android-sdk
-    rm -r android-sdk-aarch64.zip
-    echo "export ANDROID_HOME=$HOME/android-sdk" >> $HOME/.bashrc
-    echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools" >> $HOME/.bashrc
-    ```
+  ```
+  yes | pkg install wget -y
+  cd $HOME
+  wget https://github.com/Lzhiyong/termux-ndk/releases/download/android-sdk/android-sdk-aarch64.zip
+  unzip android-sdk-aarch64.zip -d android-sdk
+  rm -r android-sdk-aarch64.zip
+  echo "export ANDROID_HOME=$HOME/android-sdk" >> $HOME/.bashrc
+  echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools" >> $HOME/.bashrc
+  ```
 
 ### Enable ADB Server
 
-<details>
-<summary>For rooted device</summary>
+- You need ADB Server for selenium.
+  <details>
+  <summary>For rooted device</summary>
 
-```
-su -c stop adbd && su -c start adbd
-su -c setprop service.adb.tcp.port 5555
-```
+  - This is the easiest option.
 
-</details>
+    ```
+    su -c stop adbd && su -c start adbd
+    su -c setprop service.adb.tcp.port 5555
+    ```
 
-<details>
-<summary>For Android >= 11 and above</summary>
+  </details>
 
-- Watch this [video](https://youtu.be/KCODAyc_6rU) for how to enable adb server.
-- Then run `adb devices`.
-- Then continue run `adb tcpip 5555`.
+  <details>
+  <summary>For Android >= 11 and above</summary>
 
-</details>
+  - Watch this [video](https://youtu.be/KCODAyc_6rU) for how to enable adb server.
+  - Run `adb devices`.
+  - Run `adb tcpip 5555`.
 
-<details>
-<summary>For Android < 11, ***MUST*** have PC/Laptop</summary>
+  </details>
 
-- Go to your phone Settings.
-- Find Developer Mode.
-- Enable Developer Mode.
-- Follow me this step.
+  <details>
+  <summary>For Android < 11, you *MUST have PC/Laptop</summary>
 
-  ![settings_1](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/27552cb2-560e-4e85-82c9-c494b05a71e3)
+  - Go to your phone Settings.
+  - Find Developer Mode.
+  - Enable Developer Mode.
+  - Follow me this step.
 
-  ![settings_2](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/ae1e36b4-dcf4-4e9f-920a-1c3781b089af)
+    ![settings_1](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/27552cb2-560e-4e85-82c9-c494b05a71e3)
 
-- If your device doesn't match or is not similar to my phone, then try [this solution](https://stackoverflow.com/questions/52079343/how-can-i-use-adb-to-grant-permission-without-root).
-- Connect your phone to PC/Laptop using a USB cable.
-- On PC/Laptop, open the shell with administrator.
-- Next, you need to install Choco (This is a very easy way to install adb).
-- Run `Get-ExecutionPolicy`.
-- Run `Set-ExecutionPolicy AllSigned`.
-- Run `Set-ExecutionPolicy Bypass -Scope Process`.
-- Run `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`.
-- After installing Choco, run `choco install adb`.
-- Open the command prompt on PC/Laptop, run `adb devices`.
-- Then continue run `adb tcpip 5555`.
-- \** And run this (I don't know if it's very important or not, but my Oppo phone needs this to run successfully) to allow termux write secure settings `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
-- Now you can unplug the USB cable.
+    ![settings_2](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/ae1e36b4-dcf4-4e9f-920a-1c3781b089af)
+
+  - If your device doesn't match or is not similar to my phone, then try [this solution](https://stackoverflow.com/questions/52079343/how-can-i-use-adb-to-grant-permission-without-root).
+  - Connect your phone to PC/Laptop using a USB cable.
+  - On PC/Laptop, open the shell with administrator.
+  - Next, you need to install Choco (This is a very easy way to install adb).
+  - Run `Get-ExecutionPolicy`.
+  - Run `Set-ExecutionPolicy AllSigned`.
+  - Run `Set-ExecutionPolicy Bypass -Scope Process`.
+  - Run `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`.
+  - After installing Choco, run `choco install adb`.
+  - Open the command prompt on PC/Laptop, run `adb devices`.
+  - Then continue run `adb tcpip 5555`.
+  - *And run this (I don't know if it's very important or not, but my Oppo phone needs this to run successfully) to allow termux write secure settings `adb shell pm grant com.termux android.permission.WRITE_SECURE_SETTINGS`.
+  - Now you can unplug the USB cable.
+
+  </details>
 
 ### Recheck Step
 
