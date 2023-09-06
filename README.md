@@ -102,19 +102,19 @@ driver.quit()</pre></td>
 Chromium on Android (adb required)
 ----------------------------------
 
-### Install Android SDK
+  ### Install Android SDK
 
-- You need Android SDK to use adb control.
+  - You need Android SDK to use adb control.
 
-  ```
-  yes | pkg install wget -y
-  cd $HOME
-  wget https://github.com/Lzhiyong/termux-ndk/releases/download/android-sdk/android-sdk-aarch64.zip
-  unzip android-sdk-aarch64.zip -d android-sdk
-  rm -r android-sdk-aarch64.zip
-  echo "export ANDROID_HOME=$HOME/android-sdk" >> $HOME/.bashrc
-  echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools" >> $HOME/.bashrc
-  ```
+    ```
+    yes | pkg install wget -y
+    cd $HOME
+    wget https://github.com/Lzhiyong/termux-ndk/releases/download/android-sdk/android-sdk-aarch64.zip
+    unzip android-sdk-aarch64.zip -d android-sdk
+    rm -r android-sdk-aarch64.zip
+    echo "export ANDROID_HOME=$HOME/android-sdk" >> $HOME/.bashrc
+    echo "export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools" >> $HOME/.bashrc
+    ```
 
 ### Enable ADB Server
 
