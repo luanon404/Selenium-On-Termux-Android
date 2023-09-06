@@ -104,6 +104,8 @@ Chromium on Android (adb required)
 
 ### Install Android SDK
 
+- You need Android SDK to use adb control.
+
   ```
   yes | pkg install wget -y
   cd $HOME
