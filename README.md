@@ -47,9 +47,8 @@ Step | Command |
 --- | --- |
 1 | `curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh \| bash` |
 2 | `vncserver -listen tcp` |
-3 | `vncserver -listen tcp` |
-4 | For first time you will see it show something like `New 'localhost:1 ()' desktop is localhost:1`, then `localhost:1` is your display ip address |
-5 | You can download VNC Viewer from CH Play to view your webdriver, use `localhost:1` as the ip address |
+3 | For first time you will see it show something like `New 'localhost:1 ()' desktop is localhost:1`, then `localhost:1` is your display ip address |
+4 | You can download VNC Viewer from CH Play to view your webdriver, use `localhost:1` as the ip address |
 
 Example
 -------
