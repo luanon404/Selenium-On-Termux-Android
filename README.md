@@ -110,7 +110,7 @@ Chrome | Firefox |
 --- | --- |
 <video src="https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/23daa33f-f49f-4339-bb66-8d7c44cf6bfe"/> | <video src="https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/f3f240c4-de73-4ea2-b9d3-de37e9e81f77"/> |
 
-- This is why you should use chromium instead of chrome and firefox
+- ***This is why you should use chromium instead of chrome and firefox***
   - All data will be erased.
   - Bug/crash/error....
 
