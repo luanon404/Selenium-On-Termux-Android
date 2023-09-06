@@ -6,7 +6,9 @@ Selenium-On-Termux-Android
 Note
 ----
 
-- PLease give me star if you like this tutorial <3
+- PLease give me star if you like this tutorial <3.
+- If you receive this error `OSError: [Errno 8] Exec format error: '/data/data/com.termux/files/usr/lib/python3.11/site-packages/selenium/webdriver/common/linux/selenium-manager'`.
+- That means you haven't installed the required package.
 
 Download
 --------
@@ -16,7 +18,7 @@ Download
 Requirements
 -----
 
-Step | To do |
+Step | Command |
 --- | --- |
 1 | Open Termux |
 2 | Allow access to storage memory |
