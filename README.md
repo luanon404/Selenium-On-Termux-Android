@@ -14,27 +14,16 @@ Requirements
 Step | To do |
 --- | --- |
 1 | Open Termux |
---- | --- |
 2 | Allow access to storage memory |
---- | --- |
 3 | `termux-setup-storage` |
---- | --- |
 4 | Force exit Termux |
---- | --- |
 5 | Reopen Termux |
---- | --- |
 6 | Update & Upgrade package |
---- | --- |
 7 | `yes | pkg update -y && yes | pkg upgrade -y` |
---- | --- |
 8 | Install pip (they seperated it from python) |
---- | --- |
 9 | `pkg install python-pip` |
---- | --- |
 10 | Install selenium |
---- | --- |
 11 | `pip install selenium==4.9.1` |
---- | --- |
 12 | ***PLEASE MAKE SURE YOUR SELENIUM VERSION <= 4.9.1*** |
 
 Choose WebDriver you want install
