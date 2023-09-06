@@ -19,7 +19,7 @@ Step | To do |
 4 | Force exit Termux |
 5 | Reopen Termux |
 6 | Update & Upgrade package |
-7 | `yes | pkg update -y && yes | pkg upgrade -y` |
+7 | `yes \| pkg update -y && yes \| pkg upgrade -y` |
 8 | Install pip (they seperated it from python) |
 9 | `pkg install python-pip` |
 10 | Install selenium |
