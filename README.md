@@ -22,33 +22,42 @@ Step | Command |
 --- | --- |
 1 | Open Termux |
 2 | Allow access to storage memory |
-3 | `termux-setup-storage` |
+3 | <pre><code>termux-setup-storage</code></pre> |
 4 | Force exit Termux |
 5 | Reopen Termux |
 6 | Update & Upgrade package |
-7 | `yes \| pkg update -y && yes \| pkg upgrade -y` |
+7 | <pre><code>yes \| pkg update -y && yes \| pkg upgrade -y</code></pre> |
 8 | Install pip (they seperated it from python) |
-9 | `yes \| pkg install python-pip -y` |
+9 | <pre><code>yes \| pkg install python-pip -y</code></pre> |
 10 | Install selenium |
-11 | `pip install selenium==4.9.1` |
+11 | <pre><code>pip install selenium==4.9.1</code></pre> |
 12 | ***PLEASE MAKE SURE YOUR SELENIUM VERSION <= 4.9.1*** |
 
 Choose WebDriver you want install
 ---------------------------------
 
-Chromium | Firefox |
---- | --- |
-`yes \| pkg install x11-repo -y` | `yes \| pkg install x11-repo -y` |
-`yes \| pkg install tur-repo -y` | `yes \| pkg install firefox -y` |
-`yes \| pkg install chromium -y` | `yes \| pkg install geckodriver -y` |
+<table>
+  <tr>
+    <th>Chromium</th>
+    <th>Firefox</th>
+  </tr>
+  <tr>
+    <td><pre><code>yes | pkg install x11-repo -y
+yes | pkg install tur-repo -y
+yes | pkg install chromium -y</code></pre></td>
+    <td><pre><code>yes | pkg install x11-repo -y
+yes | pkg install firefox -y
+yes | pkg install geckodriver -y</code></pre></td>
+  </tr>
+</table>
 
 VNCServer
 ---------
 
 Step | Command |
 --- | --- |
-1 | `curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh \| bash` |
-2 | `vncserver -listen tcp` |
+1 | <pre><code>curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh \| bash</code></pre> |
+2 | <pre><code>vncserver -listen tcp</code></pre> |
 3 | For first time you will see it show something like `New 'localhost:1 ()' desktop is localhost:1`, then `localhost:1` is your display ip address |
 4 | You can download VNC Viewer from CH Play to view your webdriver, use `localhost:1` as the ip address |
 
@@ -65,7 +74,7 @@ Example
   <tr>
     <td>Headless</td>
     <td>Unknown</td>
-    <td><code>from selenium import webdriver
+    <td><pre><code>from selenium import webdriver
 options = webdriver.ChromeOptions()
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
@@ -74,19 +83,19 @@ driver = webdriver.Chrome(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
 print("Please check screenshot image")
-driver.quit()</code></td>
-    <td><code>from selenium import webdriver
+driver.quit()</code></pre></td>
+    <td><pre><code>from selenium import webdriver
 options = webdriver.FirefoxOptions()
 options.add_argument("--headless")
 driver = webdriver.Firefox(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
-driver.quit()</code></td>
+driver.quit()</code></pre></td>
   </tr>
   <tr>
     <td>Non-Headless</td>
     <td><video src="https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/98165e6d-7f0e-4853-b822-d38903b43cce"></td>
-    <td><code>from selenium import webdriver
+    <td><pre><code>from selenium import webdriver
 options = webdriver.ChromeOptions()
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
@@ -94,14 +103,14 @@ options.add_argument("--display=:1") # localhost:1 -> display ID = 1
 driver = webdriver.Chrome(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
-driver.quit()</code></td>
-    <td><code>from selenium import webdriver
+driver.quit()</code></pre></td>
+    <td><pre><code>from selenium import webdriver
 options = webdriver.FirefoxOptions()
 options.add_argument("--display=:1") # localhost:1 -> display ID = 1
 driver = webdriver.Firefox(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
-driver.quit()</code></td>
+driver.quit()</code></pre></td>
   </tr>
 </table>
 
