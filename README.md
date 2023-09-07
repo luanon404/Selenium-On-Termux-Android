@@ -65,7 +65,7 @@ Example
   <tr>
     <td>Headless</td>
     <td>Unknown</td>
-    <td><pre>from selenium import webdriver
+    <td><code>from selenium import webdriver
 options = webdriver.ChromeOptions()
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
@@ -74,19 +74,19 @@ driver = webdriver.Chrome(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
 print("Please check screenshot image")
-driver.quit()</pre></td>
-    <td><pre>from selenium import webdriver
+driver.quit()</code></td>
+    <td><code>from selenium import webdriver
 options = webdriver.FirefoxOptions()
 options.add_argument("--headless")
 driver = webdriver.Firefox(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
-driver.quit()</pre></td>
+driver.quit()</code></td>
   </tr>
   <tr>
     <td>Non-Headless</td>
     <td><video src="https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/98165e6d-7f0e-4853-b822-d38903b43cce"></td>
-    <td><pre>from selenium import webdriver
+    <td><code>from selenium import webdriver
 options = webdriver.ChromeOptions()
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
@@ -94,14 +94,14 @@ options.add_argument("--display=:1") # localhost:1 -> display ID = 1
 driver = webdriver.Chrome(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
-driver.quit()</pre></td>
-    <td><pre>from selenium import webdriver
+driver.quit()</code></td>
+    <td><code>from selenium import webdriver
 options = webdriver.FirefoxOptions()
 options.add_argument("--display=:1") # localhost:1 -> display ID = 1
 driver = webdriver.Firefox(options=options)
 driver.get("https://www.google.com")
 driver.save_screenshot("/sdcard/download/screenshot.png")
-driver.quit()</pre></td>
+driver.quit()</code></td>
   </tr>
 </table>
 
