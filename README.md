@@ -3,6 +3,11 @@ Selenium-On-Termux-Android
 
 - This tutorial will help you how to install and use Selenium on Termux for Android.
 
+Video
+-----
+
+[![Youtube Video](https://img.youtube.com/vi/Y-PnMbHLHOI/0.jpg)](https://www.youtube.com/watch?v=Y-PnMbHLHOI)
+
 Note
 ----
 
