@@ -173,7 +173,9 @@ Chrome | Firefox |
   <details>
   <summary>For Android >= 11 and above</summary>
 
-  - Watch this [video](https://youtu.be/KCODAyc_6rU) for how to enable adb server.
+  - Run `adb pair localhost:<port_1> <security_code>`.
+  - `<port_1>` != `<port_2>`, same port but it changes when pairing.
+  - Run `adb connect localhost:<port_2>`.
   - Run `adb devices`.
   - Run `adb tcpip 5555`.
 
