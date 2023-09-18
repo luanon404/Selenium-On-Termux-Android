@@ -176,6 +176,7 @@ Chrome | Firefox |
   - Run `adb pair localhost:<port_1> <security_code>`.
   - `<port_1>` != `<port_2>`, same port but it changes when pairing.
   - Run `adb connect localhost:<port_2>`.
+  - ![photo_2023-09-18_16-55-21](https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/669b073e-f75a-497e-a309-4bea4ab9bee4)
   - Run `adb devices`.
   - Run `adb tcpip 5555`.
 
