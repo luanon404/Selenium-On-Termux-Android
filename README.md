@@ -173,6 +173,7 @@ Chrome | Firefox |
   <details>
   <summary>For Android >= 11 and above</summary>
 
+  - you can watch [video tutorial](https://youtu.be/KCODAyc_6rU?si=KRUJ6B9WL_muJu7a) for how to do that.
   - Run `adb pair localhost:<port_1> <security_code>`.
   - `<port_1>` != `<port_2>`, same port but it changes when pairing.
   - Run `adb connect localhost:<port_2>`.
