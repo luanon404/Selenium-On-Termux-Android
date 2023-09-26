@@ -6,7 +6,9 @@ Selenium-On-Termux-Android
 Video
 -----
 
-[![Youtube Video](https://img.youtube.com/vi/Y-PnMbHLHOI/0.jpg)](https://www.youtube.com/watch?v=Y-PnMbHLHOI)
+<a href="https://youtu.be/Y-PnMbHLHOI">
+  <img src="https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/a16cb7c1-1b28-40e3-9c4b-de74b6512396" width="500" />
+</a>
 
 Note
 ----
