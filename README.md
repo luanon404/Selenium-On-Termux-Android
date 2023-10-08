@@ -92,7 +92,7 @@ driver.quit()</code></pre></td>
   </tr>
   <tr>
     <td>Non-Headless</td>
-    <td><video src="./assets/example_non_headless.mp4"></td>
+    <td><video src="https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/98165e6d-7f0e-4853-b822-d38903b43cce"></td>
     <td><pre><code>from selenium import webdriver
 options = webdriver.ChromeOptions()
 options.add_argument("--no-sandbox")
@@ -116,7 +116,7 @@ driver.quit()</code></pre></td>
 
 | Chrome                                                                                                                      | Firefox                                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| <video src="./assets/example_chrome.mp4"/> | <video src="./assets/example_firefox.mp4"/> |
+| <video src="https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/23daa33f-f49f-4339-bb66-8d7c44cf6bfe"/> | <video src="https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/f3f240c4-de73-4ea2-b9d3-de37e9e81f77"/> |
 
 - **_This is why you should use chromium instead of chrome and firefox_**
   - All data will be erased.
