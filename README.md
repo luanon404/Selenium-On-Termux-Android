@@ -119,7 +119,7 @@ driver.quit()</code></pre></td>
 | <video src="https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/23daa33f-f49f-4339-bb66-8d7c44cf6bfe"/> | <video src="https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/f3f240c4-de73-4ea2-b9d3-de37e9e81f77"/> |
 
 - **_This is why you should use chromium instead of chrome and firefox_**
-  - All data will be erased.
+  - All data will be **_ERASED_**.
   - Bug/crash/error....
 
 ### Install Android SDK
@@ -251,6 +251,13 @@ driver.quit()</code></pre></td>
 
 ## References
 
-- Special thanks to [@mauro199304](https://github.com/mauro199304), [@remo7777](https://github.com/remo7777/), [@lzhiyong](https://github.com/lzhiyong) for this tutorial.
+- Special thanks to:
+  - 🌟Mauro🌟
+    - Github: [@mauro199304](https://github.com/mauro199304)
+    - Telegram: [@Jovtyc](https://t.me/Jovtyc)
+  - 🌟Phong🌟
+    - Telegram: [@DZ0Phong](https://t.me/DZ0Phong)
+- [@remo7777](https://github.com/remo7777/)
+- [@lzhiyong](https://github.com/lzhiyong)
 - [Termux Desktop Xfce](https://github.com/Yisus7u7/termux-desktop-xfce)
 - [Termux Issues](https://github.com/termux/termux-packages/issues/2149)
