@@ -13,7 +13,7 @@ Note
 
 - PLease give me star if you like this tutorial <3.
 - If you receive this error `OSError: [Errno 8] Exec format error: '/data/data/com.termux/files/usr/lib/python`***X.YY***`/site-packages/selenium/webdriver/common/linux/selenium-manager'`.
-- ***X.YY*** is your Python version, example 3.8, 3.10, 3.11, 3.12, ...
+- ***X.YY*** is your Python version, example 3.8, 3.9, 3.10, 3.11, 3.12, ...
 - That means you haven't installed the required package.
 
 Download
