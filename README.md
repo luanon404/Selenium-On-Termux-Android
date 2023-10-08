@@ -6,15 +6,14 @@ Selenium-On-Termux-Android
 Video
 -----
 
-<a href="https://youtu.be/Y-PnMbHLHOI">
-  <img src="https://github.com/luanon404/Selenium-On-Termux-Android/assets/71830807/a16cb7c1-1b28-40e3-9c4b-de74b6512396" width="500" />
-</a>
+[![Tutorial video](https://github-production-user-asset-6210df.s3.amazonaws.com/71830807/273455155-d035090c-f0a3-4783-b6ec-6e2503e9793a.png)](https://youtu.be/Y-PnMbHLHOI)
 
 Note
 ----
 
 - PLease give me star if you like this tutorial <3.
-- If you receive this error `OSError: [Errno 8] Exec format error: '/data/data/com.termux/files/usr/lib/python3.11/site-packages/selenium/webdriver/common/linux/selenium-manager'`.
+- If you receive this error `OSError: [Errno 8] Exec format error: '/data/data/com.termux/files/usr/lib/python`***X.YY***`/site-packages/selenium/webdriver/common/linux/selenium-manager'`.
+- ***X.YY*** is your Python version, example 3.8, 3.10, 3.11, 3.12, ...
 - That means you haven't installed the required package.
 
 Download
