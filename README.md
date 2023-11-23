@@ -219,6 +219,7 @@ driver.quit()</code></pre></td>
 
 ### Example Code For Chromium
 
+- This apk only support arm64, for 32 bit i dont know.
 - [Download link](https://github.com/macchrome/droidchrome/tags) (current selenium only support chromium <= 110).
 - Or use this [link](https://github.com/macchrome/droidchrome/releases/download/v110.5481.153-M110.0.5481.153-r1191-Ungoogled-And64/arm64_ChromePublic_HEVC-110.0.5481.153.apk) for fast download.
 - Make sure you **_CLOSED_** all chromium instances before run this code (Chrome, Chrome Dev, Chrome Canary, Kiwi Browser, Brave, ....).
