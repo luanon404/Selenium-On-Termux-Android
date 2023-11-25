@@ -1,3 +1,8 @@
+# Why archive?
+
+- Testing and finding solutions is really difficult, so I won't continue this project.
+- You can wait for me to release something similar for android at [Moe-Moe](https://github.com/luanon404/Moe-Moe).
+
 ## Selenium-On-Termux-Android
 
 - This tutorial will help you how to install and use Selenium on Termux for Android.
