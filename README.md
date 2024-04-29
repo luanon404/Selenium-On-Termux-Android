@@ -1,7 +1,10 @@
 # Why archive?
 
 - Testing and finding solutions is really difficult, so I won't continue this project.
-- You can wait for me to release something similar for android at [Moe-Moe](https://github.com/luanon404/Moe-Moe).
+- ~~You can wait for me to release something similar for android at [Moe-Moe](https://github.com/luanon404/Moe-Moe)~~.
+- I dont have time to continue that project, also i renamed it to [AwChromium](https://github.com/luanon404/AwChromium).
+- Also thank you all :D, who visted my tutorial, and watch my video, its really cool !!!
+- **Ai không biết tiếng anh thì sài google dịch đi !**
 
 ## Selenium-On-Termux-Android
 
@@ -56,7 +59,7 @@ yes | pkg install geckodriver -y</code></pre></td>
   </tr>
 </table>
 
-## VNCServer
+## VNCServer ( **Optional** )
 
 | Step | Command                                                                                                                                         |
 | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
