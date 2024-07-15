@@ -20,6 +20,7 @@
 - If you receive this error `OSError: [Errno 8] Exec format error: '/data/data/com.termux/files/usr/lib/python`**_X.YY_**`/site-packages/selenium/webdriver/common/linux/selenium-manager'`.
 - Where **_X.YY_** is your Python version, example 3.8, 3.9, 3.10, 3.11, 3.12, ...
 - That means you haven't installed the required package.
+- Custom distro **&** modded termux **WON'T WORK**.
 
 ## Download
 
