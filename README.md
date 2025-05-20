@@ -12,6 +12,10 @@
 
 ## Video
 
+<image src="./sad.jpg">
+
+## VIDEO GONE SINCE I POST ONE VIDEO ABOUT HOW DID I FOUND MICROSOFT BYPASS CAPTCHA BUG!
+
 [![Tutorial video](./assets/youtube_thumbnail.png)](https://youtu.be/Y-PnMbHLHOI)
 
 ## Note
